@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+</head>
+<body>
+  <h1>Contoh Audio di Web</h1>
+  <audio controls>
+    <source src="Ngoni.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+  </audio>
+</body>
+</html>
+<html lang="en">
+	<!-- MyAnimeProfile Rebase-->
+	<head>
+		<title>MyAnimeProfile</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Styles-->
+		<link rel="stylesheet" type="text/css" href="assets/styles/meyerweb-reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/stylesheet.css">
+		
+		<!--media reporter for testing-->
+		<!--<link rel="stylesheet" type="text/css" href="assets/styles/MediaQuery-Reporter Styles.css">-->
+
+		<!--Scripts-->
+
+		<!--Font Awesome Icons-->
+		<script src="https://kit.fontawesome.com/2ebfb1fd60.js" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="assets/scripts/main_page_functions.js"></script>		
+	</head>
+	<body>
+		<div id="page_wrapper">
+			<div id="header">
+				<h1 id="page_title">My Anime Profile</h1>
+				<img id="profile_banner" src="assets/images/profile_banner.webp"></img>
+			</div><!-- header -->
+			
+			<div id="bio">
+				<img id="profile_pic" src="assets/images/profilepic_square.png"></img>
+				<h2 id="name">Yuji</h2>
+				<h3 id="handle">@Kazuki-kazami</h3>
+				<p id="biotext"></p>
+				<div id="bio_socials">
+					<a href="https://maohgakuin.com/" id="bio-social-kitsu"class="bio-social-item"><img src="assets/images/icons/kitsu.ico"></img></a>
+					<a href="https://x.com/tokisakiKu39811" id="bio-social-twitter"class="bio-social-item"><i class="fa-brands fa-twitter"></i></a>						
+					<a href=""="show_discord_modal()" id="social_discord_btn" class="bio-social-item"><i class="fa-brands fa-discord"></i></button>
+					<a href="https://github.com/Kazukikazami03/Kazuki-kazami" id="bio_social-github"class="bio-social-item"><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div><!-- bio -->
+
+			<div id="nav">
+				<button onclick="tab_selct('nav_about', 'tab_about')" id="nav_about" class="nav-item first-nav-item">About</button>
+				<!-- <button onclick="tab_selct()" id="nav_spotlight" class="nav-item nav-item-active nav-item-selected">Spotlight</button> -->
+				<button onclick="tab_selct('nav_watching', 'tab_watching')" id="nav_watching" class="nav-item nav-item-selected">Watching</button>				
+				<button onclick="tab_selct('nav_favorites', 'tab_favorites')" id="nav_favorites" class="nav-item">Favorites</button>
+				<button onclick="tab_selct('nav_linksandfollows', 'tab_linksandfollows')" id="nav_linksandfollows" class="nav-item">Links and Follows</button>
+			</div><!-- Nav -->
+			
+			<div id="tab_about" class="tab tab-actionable">
+				<div id="about_fields">
+					<div class="about-field"><i class="fas fa-mars field-icon"></i> He / Him</div>
+					<div class="about-field"><i class="fas fa-birthday-cake field-icon"></i> April 17th</div>
+					<div class="about-field"><i class="fas fa-map-marker-alt field-icon"></i> Cukanguncal, gushi</div>
+					<div class="about-field"><i class="fas fa-calendar field-icon"></i> Watching Since 2021</div>
+					<div class="about-field"><i class="fas fa-heart field-icon"></i> Waifu: <img class="waifu" src="assets/images/icons/waifu.png"></img> Kazuki-kazami</div>
+					<div class="about-field"><i class="fas fa-place-of-worship field-icon"></i> Thighdeology</div>
+					<div class="about-field"><i class="fas fa-microphone-alt field-icon"></i> English Dubbe</div>
+					
+					<!--
+						<div class="about-field"><i class="fas fa-palette field-icon"></i> Studio Bones</div>
+					-->
+				</div><!-- about fields -->
+				
+				<div class="about-tags">
+					<div class="about-tag">Action</div>
+					<div class="about-tag">Adventure</div>
+					<div class="about-tag">Comedy</div>
+					<div class="about-tag">Crimson Redheads</div>
+					<div class="about-tag">Fantasy</div>					
+					<div class="about-tag">Romance</div>
+					<div class="about-tag">Slice of Life</div>					
+					<div class="about-tag">Tsunderes</div>
+					<div class="about-tag">Twintails</div>
+					<div class="about-tag">ZettaiRyouiki</div>
+				</div><!-- about tags -->
+			</div><!-- about -->
+
+			<div id="main">
+				<div id="tab_watching" class="tab tab-actionable main-item">
+					<div class="watching-item"><!--Currently Watching-->
+						<h2 class="section-heading">1</h2>
+						<div class="tiled-list scrolling-tiled-list">
+							<!-- <a class="tile" href=""><img class="tile-image" src="" alt=""></img></a> -->												
+							<a class="tile" href="https://date-a-live4th-anime.com/"><img class="tile-image" src="https://telegra.ph/file/a46ff0dc05a3e0f143a2e.jpg" alt="Spice and Wolf (New Anime)"></img></a>
+							<a class="tile" href="https://kitsu.io/anime/kaijuu-8-gou"><img class="tile-image" src="https://media.kitsu.io/a" alt=""></img></a>
+							<a class="tile" href="https://www.grisaia-anime.com/"><img class="tile-image" src="https://telegra.ph/file/ed993662675953af6c75b.jpg" alt="KonoSuba 3"></img></a>
+							<a class="tile" href="https://higurashianime.com/"><img class="tile-image" src="https://telegra.ph/file/f48b689e439bdf6e334b7.jpg" alt="Syndron hinamizawa"></img></a>
+							<a class="tile" href="https://maohgakuin.com/"><img class="tile-image" src="https://telegra.ph/file/4b2b02276b06f342c5f11.jpg" alt="Reincarnation"></img></a>
+							<a class="tile" href="https://veinstore.id/beli/mobile-legends"><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+						</div><!-- tiled-list -->
+					</div><!-- Currently Watching-->			
+
+					<div class="watching-item"><!--Movie Night-->
+						<h2 class="section-heading">2</h2>
+						<div class="tiled-list scrolling-tiled-list">
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>							
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href="https://kitsu.io/anime/josee-to-tora-to-sakana-tachi"><img class="tile-image" src="https://media.kitsu.io/anime/42825/poster_image/large-a8bf40f4adc593d9f724ed684bb7c847.jpeg" alt="Josee, the Tiger and the Fish"></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							
+
+							<!--
+								<a class="tile" href="https://kitsu.io/anime/violet-evergarden-movie"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/41450/large.jpg?1597696766" alt=" Violet Evergarden the Movie"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/made-in-abyss-fukaki-tamashii-no-reimei"><img class="tile-image" src="https://media.kitsu.io/anime/14027/poster_image/large-bd0a46571b303ef6a3efa595e7ca90bf.jpeg" alt="Made in Abyss: Dawn of the Deep Soul"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/the-girl-who-leapt-through-time"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/2027/large.jpg?1597698085" alt="The Girl Who Leapt Through Time"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/kiki-s-delivery-service"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/471/large.jpg?1597696643" alt="Kiki's Delivery Service"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/howl-s-moving-castle"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1597698759" alt="Howl's Moving Castle"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/princess-principal-crown-handler-one"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/41254/large.jpg?1623161012" alt="Princess Principal Crown Handler 1 "></img></a>
+								<a class="tile" href="https://kitsu.io/anime/psycho-pass-providence"><img class="tile-image" src="https://media.kitsu.io/anime/46358/poster_image/large-3f5f30bb283586eabafa043278e70230.jpeg" alt="Psycho-Pass: Providence"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/boku-ga-aishita-subete-no-kimi-e"><img class="tile-image" src="https://media.kitsu.io/anime/45220/poster_image/large-577070fccfb68a4eae8fd2fd3265be47.jpeg" alt="To Every You I’ve Loved Before"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/kimi-wo-aishita-hitori-no-boku-e"><img class="tile-image" src="https://media.kitsu.io/anime/45219/poster_image/large-d88b82f9cb9a5e13b5efabd83f51359e.jpeg" alt="To Me, The One Who Loved"></img></a>								
+								<a class="tile" href="https://kitsu.io/anime/boku-no-hero-academia-the-movie-3"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/44209/large.jpg" alt="My Hero Academia the Movie 3: World Heroes' Mission"></img></a>
+							-->
+						</div><!-- tiled-list -->
+					</div><!-- Movie Night-->						
+
+					<div class="watching-item"><!--Binge Watching-->
+						<h2 class="section-heading">3</h2>
+						<h3 class="section-subheading">4</h3> 
+						<div class="tiled-list scrolling-tiled-list">																	
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>							
+							<a class="tile" href="https://kitsu.io/anime/boku-no-kokoro-no-yabai-yatsu"><img class="tile-image" src="https://media.kitsu.io/anime/46299/poster_image/large-116b49ab958abf27bbbb38e9215a0fe1.jpeg" alt="The Dangers in My Heart"></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<!--
+								<a class="tile" href="https://kitsu.io/anime/rurouni-kenshin-meiji-kenkaku-romantan-2023"><img class="tile-image" src="https://media.kitsu.io/anime/45616/poster_image/large-1881293614632c347d895db0315419a7.jpeg" alt="Rurouni Kenshin"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/lovely-complex"><img class="tile-image" src="https://media.kitsu.io/anime/1833/poster_image/large-892da306ae6f1ec03daefae58c45138b.jpeg" alt="Lovely Complex"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/sokushi-cheat-ga-saikyou-sugite-isekai-no-yatsura-ga-marude-aite-ni-naranai-n-desu-ga"><img class="tile-image" src="https://media.kitsu.io/anime/46807/poster_image/large-b6a293c41394ac46a07c222709bb59b1.jpeg" alt="My Instant Death Ability"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/momochi-san-chi-no-ayakashi-ouji"><img class="tile-image" src="https://media.kitsu.io/anime/47751/poster_image/large-ae82edc7982f64d696ea5ae7a0dc6adf.jpeg" alt="The Demon Prince of Momochi House"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/dosanko-gyaru-wa-namaramenkoi"><img class="tile-image" src="https://media.kitsu.io/anime/46663/poster_image/large-86f714bf816fa386a1d564a791705531.jpeg" alt="Hokkaido Gals Are Super Adorable!"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/renai-flops"><img class="tile-image" src="https://media.kitsu.io/anime/46002/poster_image/large-a11e2fc22909ae0a7f53b43765c95f2f.jpeg" alt="LOVE FLOPS"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/nichijou"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/6062/large.jpg?1597696783" alt="Nichijou"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/chuunibyou-demo-koi-ga-shitai"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/7160/large.jpg?1597699260" alt="Love, Chunibyo & Other Delusions!"></img></a>							
+								<a class="tile" href="https://kitsu.io/anime/anohana-the-flower-we-saw-that-day"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/5981/large.jpg?1597696751" alt="Anohana: The Flower We Saw That Day"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/shirobako"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/8698/large.jpg?1597696859" alt="Shirobako"></img></a>														
+								<a class="tile" href="https://kitsu.io/anime/chihayafuru"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/6355/large.jpg" alt="Chihayafuru"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/shokugeki-no-souma-gou-no-sara"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/42921/large.jpg" alt="Shokugeki no Souma: Gou no Sara"></img></a>							
+								<a class="tile" href="https://kitsu.io/anime/koi-wa-ameagari-no-you-ni"><img class="tile-image" src="https://media.kitsu.io/anime/poster_images/13277/large.jpg?1597697509" alt="After the Rain"></img></a>
+								<a class="tile" href="https://kitsu.io/anime/ousama-ranking-yuuki-no-takarabako"><img class="tile-image" src="https://media.kitsu.io/anime/46317/poster_image/large-4604d11f71b9652e9f39ef679a3484a5.jpeg" alt="Ranking of Kings: Treasure Chest of Courage"></img></a>
+							-->
+						</div><!-- tiled-list -->
+
+						<h3 class="section-subheading">5</h3> 
+						<div class="tiled-list scrolling-tiled-list">
+							<a class="tile" href="https://kumakumakumabear.com/1st/"><img class="tile-image" src="https://telegra.ph/file/b9cbfab6bd2c150ddea59.jpg" alt="kumakumakumabear"></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt="Undead Unluck"></img></a>
+							<a class="tile" href=""><img class="tile-image" src="" alt=""></img></a>
+							<a class="tile" href="https://kitsu.io/anime/maou-no-ore-ga-dorei-elf-wo-yome-ni-shitanda-ga-dou-medereba-ii"><img class="tile-image" src="" alt="An Archdemon's Dilemma: How to Love Your Elf Bride"></img></a>
+							<a class="tile" href=""><img class="tile-image" src="https://telegra.ph/file/53cf7959f1c7c781fc603.jpg" alt=""></img></a>
+							<a class="tile" href="https://hikikomari.com/"><img class="tile-image" src= "https://telegra.ph/file/71d565f6df9750355a7ea.jpg" alt="The Vexations of a Shut-In Vampire Princess"></img></a>
+							<a class="tile" href="https://kitsu.io/anime/higeki-no-genkyou-to-naru-saikyou-gedou-last-boss-joou-wa-tami-no-tame-ni-tsukushimasu"><img class="tile-image" src="https://media.kitsu.io/anime/46689/poster_image/lar" alt="The Most Heretical Last B
+							/head>
+<body>
+    <source src="
+</body>
+</html>
+<style>
+        body{
+            background-image: url(https://telegra.ph/file/f87047bdb192d895fc1b8.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: cover;
+            background-attachment: fixed;
+            height: cover%;
+    <style>
