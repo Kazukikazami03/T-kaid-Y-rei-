@@ -28,38 +28,40 @@
             to { opacity: 1; }
         }
 
-        /* Tambahkan informasi baterai di pojok kanan bawah */
+        /* Tambahkan informasi baterai di pojok kanan atas (di bawah waktu) */
         .battery-info {
             position: absolute;
-            bottom: 50px; /* Posisi di atas runtime */
+            top: 50px; /* Di bawah waktu */
             right: 20px;
             font-size: 16px;
             animation: fadeIn 2s ease-in-out; /* Tambahkan animasi fade-in */
         }
 
-        /* Tambahkan informasi ping di pojok kiri bawah */
+        /* Tambahkan informasi ping di pojok kiri atas (di bawah tanggal dan negara) */
         .ping-info {
             position: absolute;
-            bottom: 50px;
+            top: 50px; /* Di bawah tanggal dan negara */
             left: 20px;
             font-size: 16px;
+            animation: fadeIn 2s ease-in-out; /* Tambahkan animasi fade-in */
         }
 
-        /* Tambahkan informasi runtime handphone di pojok kanan bawah */
+        /* Tambahkan informasi runtime handphone di pojok kanan atas (di bawah baterai) */
         .runtime-info {
             position: absolute;
-            bottom: 20px; /* Posisi di bawah baterai */
+            top: 80px; /* Di bawah baterai */
             right: 20px;
             font-size: 16px;
             animation: fadeIn 2s ease-in-out; /* Tambahkan animasi fade-in */
         }
 
-        /* Tambahkan informasi FPS di pojok kiri bawah */
+        /* Tambahkan informasi FPS di pojok kiri atas (di bawah ping) */
         .fps-info {
             position: absolute;
-            bottom: 20px;
+            top: 80px; /* Di bawah ping */
             left: 20px;
             font-size: 16px;
+            animation: fadeIn 2s ease-in-out; /* Tambahkan animasi fade-in */
         }
     </style>
 </head>
@@ -169,6 +171,7 @@
     </script>
 </body>
 </html>
+
 
 <html lang="id">
 <head>
@@ -352,5 +355,4 @@
         </div>
     </div>
 </body>
-    </html>
-    
+                </html>
